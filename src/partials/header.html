@@ -1,1 +1,64 @@
-header
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <picture>
+        <source srcset="./public/img/logo.svg" media="(min-width: 992px)" />
+        <img src="./public/img/logo-mobile.svg" alt="logo" />
+      </picture>
+
+      <div class="wrap">
+        <div class="nav-extra d-flex align-items-center"></div>
+        <button class="navbar-toggler hamburger hamburger--emphatic-r" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-between w-100 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">main</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">game features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">System requirements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">quotes</a>
+          </li>
+        </ul>
+
+
+
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            ENG
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">RUS</a></li>
+            <li><a class="dropdown-item" href="#">UKR</a></li>
+          </ul>
+        </div>
+
+        <span class="navbar__line"></span>
+
+        <div class="navbar__social">
+          <a href="#">
+            <img src="./public/img/icon-xbox.svg" alt="icon-xbox">
+          </a>
+          <a href="#">
+            <img src="./public/img/icon-steam.svg" alt="icon-steam">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
