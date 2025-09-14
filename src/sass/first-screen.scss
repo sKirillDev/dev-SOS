@@ -1,7 +1,7 @@
 @use 'variables'as variables;
 
 .banner {
-    background-image: url('../../public/img/bg-image.png');
+    background-image: url('/img/bg-image.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,9 +16,11 @@
         margin-bottom: 44px;
     }
 
-    .container:nth-child(2n) {
-        padding: 220px 10px;
-        text-align: center;
+    .container {
+        &:nth-child(2n) {
+            padding: 220px 10px;
+            text-align: center;
+        }
     }
 
     &__scroll {
