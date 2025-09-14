@@ -1,3 +1,22 @@
 @media screen and (max-width: 767.98px) {
+    .banner {
+        h1 {
+            font-size: 33px;
+            margin-bottom: 2px;
+        }
 
+        h3 {
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+
+        .container:nth-child(2n) {
+            padding: 180px 10px;
+        }
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 12px 18px 15px;
+    }
 }

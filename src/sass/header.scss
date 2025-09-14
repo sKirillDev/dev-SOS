@@ -1,3 +1,5 @@
+@use 'variables' as variables;
+
 .navbar {
     padding-top: 21px;
     padding-bottom: 0;
@@ -6,7 +8,7 @@
         width: 1px;
         min-height: 30px;
         height: 100%;
-        background-color: #fff;
+        background-color: variables.$color;
         opacity: 0.5;
     }
 
@@ -31,14 +33,14 @@
 .dropdown .nav-link,
 .dropdown-item,
 .nav-link {
-    color: #fff;
+    color: variables.$color;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.1em;
 
     &:hover,
     &:focus {
-        color: #FFB548;
+        color: variables.$primary-color;
         background-color: inherit;
     }
 }
@@ -105,7 +107,7 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-    background-color: #ffffff;
+    background-color: variables.$color;
     width: 24px;
     height: 2px;
     border: 3px;

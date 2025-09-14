@@ -29,4 +29,9 @@ document.addEventListener('DOMContentLoaded', moveElements);
 window.addEventListener('resize', moveElements);
 
 
+const firstScreen = document.querySelector('.banner')
+const navToggle = document.querySelector('.navbar-toggler')
+navToggle.addEventListener('click', () => firstScreen.classList.toggle('active'))
+
+
 

@@ -1,0 +1,62 @@
+@use 'variables'as variables;
+
+.banner {
+    background-image: url('../../public/img/bg-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+    h1 {
+        margin-bottom: -6px;
+    }
+
+    h3 {
+        margin-bottom: 44px;
+    }
+
+    .container:nth-child(2n) {
+        padding: 220px 10px;
+        text-align: center;
+    }
+
+    &__scroll {
+        position: absolute;
+        bottom: 65px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 2.2;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: variables.$color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: variables.$primary-color;
+        }
+
+        .banner__icon_arrow-down {
+            position: absolute;
+            width: 23px;
+            height: 11px;
+            animation: moving alternate 0.9s infinite;
+        }
+    }
+}
+
+@keyframes moving {
+    from {
+        bottom: -10px;
+    }
+
+    to {
+        bottom: -20px;
+    }
+}

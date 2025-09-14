@@ -1,4 +1,74 @@
+@use 'variables'as variables;
+
+html {
+    font-size: variables.$font-size;
+}
+
 body {
-    font-family: "OpenSans";
+    font-family: variables.$font-primary;
     background-color: #000000;
+    color: variables.$color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: variables.$font-secondary;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 80px;
+    letter-spacing: 0.04em;
+}
+
+h3 {
+    font-size: 24px;
+    letter-spacing: 0.08em;
+}
+
+.btn-primary {
+    font-size: 16px;
+    color: variables.$color-accent;
+    text-decoration: none;
+    font-weight: 700;
+    background: linear-gradient(181deg, #ffb548 0%, #f3af34 99.52%);
+    padding: 17px 18px 20px;
+    border-radius: 4px;
+
+    &__line {
+        display: inline-block;
+        width: 2px;
+        height: 24px;
+        margin: 0 7px;
+    }
+}
+
+.btn-primary:hover {
+    background: #f6a937;
+    color: variables.$color-accent;
+}
+
+.btn-check:checked+.btn-primary,
+.btn-check:active+.btn-primary,
+.btn-primary:active,
+.btn-primary.active,
+.show>.btn-primary.dropdown-toggle .btn-check:focus+.btn-primary,
+.btn-primary:focus,
+.btn-check:checked+.btn-primary:focus,
+.btn-check:active+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    color: variables.$color-accent;
+    box-shadow: 0 0 0 0.25rem #FFB54880;
+    transition: 0.1s;
+}
+
+.icon-sprite_hidden {
+    display: none;
 }
