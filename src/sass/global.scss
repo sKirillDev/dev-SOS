@@ -2,12 +2,17 @@
 
 html {
     font-size: variables.$font-size;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: variables.$font-primary;
     background-color: #000000;
     color: variables.$color;
+}
+
+section {
+    scroll-margin-bottom: 50px;
 }
 
 h1,
@@ -29,6 +34,12 @@ h1 {
 h3 {
     font-size: 24px;
     letter-spacing: 0.08em;
+}
+
+.bg-screen {
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 .btn-primary {

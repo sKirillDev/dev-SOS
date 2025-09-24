@@ -43,12 +43,45 @@
         }
     }
 
-
     .navbar-collapse {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         z-index: 1000;
+    }
+
+    .about {
+        .container {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    .about__content {
+        align-items: start;
+
+        p {
+            font-size: 14px;
+            line-height: 114%;
+        }
+
+        .about__subtitle {
+            font-size: 18px;
+            letter-spacing: 0.11em;
+        }
+
+        .about__title {
+            font-size: 33px;
+            letter-spacing: 0.09em;
+            text-align: left;
+            width: 100%;
+            padding-right: 120px;
+
+            &::after {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
     }
 }
