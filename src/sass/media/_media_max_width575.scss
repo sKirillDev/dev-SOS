@@ -5,4 +5,26 @@
             margin-left: auto;
         }
     }
+
+    .features {
+        .container {
+            max-width: 250px;
+        }
+    }
+
+    .accordion-body {
+        text-align: justify;
+    }
+
+    .accordion {
+        .accordion-item:nth-child(2n) {
+            .accordion-button:not(.collapsed)::after {
+                height: calc(var(--distance) - 13px);
+            }
+        }
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        top: 20px;
+    }
 }

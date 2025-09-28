@@ -5,6 +5,7 @@ btnBurger.addEventListener('click', () => btnBurger.classList.toggle('is-active'
 
 
 
+
 const dropdown = document.querySelector('.dropdown');
 const line = document.querySelector('.navbar__line');
 const collapse = document.getElementById('navbarSupportedContent');
@@ -15,15 +16,18 @@ const BREAKPOINT = 992;
 function moveElements() {
   if (!dropdown || !line || !collapse || !navExtra) return;
 
-  if (window.innerWidth < BREAKPOINT) {
-    if (!navExtra.contains(dropdown)) navExtra.appendChild(dropdown);
-    if (!navExtra.contains(line)) navExtra.appendChild(line);
-  } else {
-    const refNode = social || null;
-    if (!collapse.contains(dropdown)) collapse.insertBefore(dropdown, refNode);
-    if (!collapse.contains(line)) collapse.insertBefore(line, refNode);
+  const isMobile = window.innerWidth < BREAKPOINT;
+
+  if (isMobile) {
+    navExtra.append(dropdown, line);
+  } 
+  
+  else {
+    collapse.insertBefore(dropdown, social);
+    collapse.insertBefore(line, social);
   }
 }
+
 
 document.addEventListener('DOMContentLoaded', moveElements);
 window.addEventListener('resize', moveElements);
@@ -51,10 +55,26 @@ const swiper = new Swiper(".swiper", {
   },
 
   on: {
-      reachEnd: function () {
-        setTimeout(() => {
-          this.slideTo(0, 500);
-        }, 300);
-      },
+    reachEnd: function () {
+      setTimeout(() => {
+        this.slideTo(0, 500);
+      }, 300);
     },
+  },
 });
+
+
+document.querySelectorAll(".accordion-collapse").forEach(collapse => {
+  collapse.addEventListener('shown.bs.collapse', () => {
+    const li = collapse.closest(".accordion-item");
+    const nextLi = li.nextElementSibling;
+
+    if (nextLi) {
+      const distance = nextLi.offsetTop - li.offsetTop;
+      li.setAttribute('style', '--distance:' + distance + 'px');
+      console.log(distance);
+    }
+  });
+});
+
+

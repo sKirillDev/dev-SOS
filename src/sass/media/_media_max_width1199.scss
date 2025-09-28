@@ -41,4 +41,14 @@
         left: auto;
         right: -54px;
     }
+
+    .features {
+        .container {
+            margin-right: 10px;
+        }
+
+        .accordion {
+            max-width: 450px;
+        }
+    }
 }

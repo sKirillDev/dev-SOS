@@ -1,0 +1,106 @@
+@use 'variables'as variables;
+
+.features {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.789) 1%, transparent),
+        url("/img/bg-image-3.png") center/cover no-repeat;
+
+    .container {
+        display: flex;
+        margin-left: auto;
+        margin-right: 100px;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        max-width: 450px;
+    }
+}
+
+.features__content {
+    margin-bottom: 50px;
+}
+
+.accordion {
+    max-width: 450px;
+    list-style: none;
+}
+
+.accordion-item {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 30px;
+
+    h2 {
+        margin: 0;
+    }
+
+    &:last-child {
+        .accordion-button {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: variables.$primary-color;
+    box-shadow: none;
+    padding: 0;
+}
+
+.accordion-button {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -45px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: 2px solid variables.$color;
+    }
+
+    &:not(.collapsed)::before {
+        background-color: variables.$color;
+    }
+
+    &::after {
+        background-image: none;
+    }
+
+    &:not(.collapsed)::after {
+        height: var(--distance);
+        width: 2px;
+        background-color: variables.$color;
+        position: absolute;
+        left: -39px;
+        top: 16px;
+        transform: none;
+
+        animation: grow-connector 0.5s;
+    }
+
+    &:focus {
+        border-color: transparent;
+        box-shadow: none;
+    }
+}
+
+.accordion-body {
+    padding: 20px 0 0 0;
+}
+
+@keyframes grow-connector {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: var(--distance);
+    }
+}

@@ -1,4 +1,19 @@
 @media screen and (max-width: 991.98px) {
+    h1 {
+        font-size: 33px;
+        letter-spacing: 0.09em;
+    }
+
+    h2 {
+        font-size: 21px;
+        letter-spacing: 0.1em;
+    }
+
+    h3 {
+        font-size: 18px;
+        letter-spacing: 0.11em;
+    }
+
     .navbar {
         padding-top: 10px;
 
@@ -27,6 +42,12 @@
         border-radius: 4px;
     }
 
+    .container {
+        &:not(.banner) {
+            position: static;
+        }
+    }
+
     .banner {
         background-position: 45% center;
 
@@ -37,9 +58,10 @@
         &.active::before {
             content: "";
             position: absolute;
-            background-color: #00000082;
+            background: #00000082;
             backdrop-filter: blur(5px);
             inset: 0;
+            height: 100%;
         }
     }
 
@@ -66,14 +88,7 @@
             line-height: 114%;
         }
 
-        .about__subtitle {
-            font-size: 18px;
-            letter-spacing: 0.11em;
-        }
-
         .about__title {
-            font-size: 33px;
-            letter-spacing: 0.09em;
             text-align: left;
             width: 100%;
             padding-right: 120px;
@@ -83,5 +98,44 @@
                 margin-top: 30px;
             }
         }
+    }
+
+    .accordion-body {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    .accordion-button {
+        &:not(.collapsed)::after {
+            top: 8px;
+        }
+    }
+
+    .features {
+        .container {
+            max-width: 320px;
+        }
+    }
+
+    .features__content {
+        margin-bottom: 20px;
+    }
+
+    .accordion {
+        padding-left: 0;
+    }
+
+    .accordion-button {
+        &::before {
+            left: -19px;
+        }
+
+        &:not(.collapsed)::after {
+            left: -14px;
+        }
+    }
+
+    .accordion-item {
+        margin-bottom: 43px;
     }
 }
