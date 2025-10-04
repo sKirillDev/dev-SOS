@@ -1,4 +1,8 @@
 @media screen and (max-width: 575.98px) {
+    .about {
+        background: url("/img/bg-image-2-mobile.png") center/cover no-repeat;
+    }
+
     .about__content {
         p {
             max-width: 268px;
@@ -26,5 +30,26 @@
 
     .accordion-button:not(.collapsed)::after {
         top: 20px;
+    }
+
+    .requirements {
+        background: url("/img/bg-image-4-mobile.png") center/cover no-repeat;
+        align-items: flex-start;
+        padding-top: 70px;
+    }
+
+    .requirements__name {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .requirements__description {
+        font-size: 14px;
+        margin-bottom: 0;
+        line-height: 1.14;
+
+        br {
+            display: none;
+        }
     }
 }

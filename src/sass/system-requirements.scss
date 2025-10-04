@@ -1,0 +1,50 @@
+@use 'variables'as variables;
+
+.requirements {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.789) 1%, transparent),
+        url("/img/bg-image-4.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+
+.requirements__table {
+    position: relative;
+    max-width: 574px;
+}
+
+.requirements__frame {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.requirements__row {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.requirements__col {
+    font-size: 14px;
+    padding: 15px 20px 0px;
+
+    &:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+.requirements__content {
+    text-align: center;
+}
+
+.requirements__title {
+    margin-bottom: 132px;
+}
+
+.requirements__name {
+    color: variables.$primary-color;
+    font-size: 24px;
+}
