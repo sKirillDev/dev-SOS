@@ -139,4 +139,67 @@
     .accordion-item {
         margin-bottom: 43px;
     }
+
+    .quotes {
+        .container {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    .quotes__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quotes__cards-list {
+        gap: 20px;
+    }
+
+    .quotes__card {
+        padding: 10px 17px 15px;
+    }
+
+    .quotes__avatar {
+        img {
+            width: 40px;
+            height: 40px;
+        }
+
+        &::after {
+            width: 40px;
+            height: 40px;
+            right: -4px;
+            top: 4px;
+        }
+    }
+
+    .quotes__author-info {
+        margin-bottom: 18px;
+    }
+
+    .quotes__author-name {
+        font-size: 21px;
+        margin-bottom: 5px;
+    }
+
+    .quotes__author-role,
+    .quotes__author-text {
+        font-size: 14px;
+    }
+
+    .quotes__author-text {
+        margin-bottom: 14px;
+    }
+
+    .quotes__description {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .quotes__title,
+    .quotes__description {
+        margin-bottom: 30px;
+    }
 }

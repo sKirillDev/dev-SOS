@@ -1,0 +1,115 @@
+@use 'variables'as variables;
+
+.quotes {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.789) 1%, transparent),
+        url("/img/bg-image-5.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.quotes__content {
+    max-width: 430px;
+
+    .btn-primary {
+        padding: 17px 38px 20px 31px;
+    }
+}
+
+.quotes__title {
+    margin-bottom: 60px;
+}
+
+.quotes__description {
+    margin-bottom: 66px;
+}
+
+.quotes__cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.quotes__card {
+    width: 100%;
+    max-width: 453px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 20px 18px 15px;
+
+    &:nth-child(1) {
+        margin-left: 145px;
+    }
+
+    &:nth-child(3) {
+        margin-left: 100px;
+    }
+}
+
+.quotes__avatar {
+    display: inline-block;
+    position: relative;
+
+    img {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        background-color: variables.$primary-color;
+        right: -5px;
+        top: 2px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+.quotes__author-info {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 26px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(/img/icon-twitter.svg) center/contain no-repeat;
+        width: 19px;
+        height: 14px;
+        right: 0;
+        top: 4px;
+    }
+}
+
+.quotes__date {
+    font-size: 14px;
+}
+
+.quotes__author-role {
+    margin-bottom: 0;
+}
+
+.quotes__date,
+.quotes__author-role {
+    opacity: 0.5;
+}
+
+.quotes__author-text {
+    &::before {
+        content: "“";
+    }
+
+    &::after {
+        content: "“";
+    }
+}

@@ -24,6 +24,7 @@ h6 {
     font-family: variables.$font-secondary;
     font-weight: 700;
     text-transform: uppercase;
+    width: 100%;
 }
 
 h1 {
@@ -78,6 +79,7 @@ p {
 }
 
 .btn-primary {
+    display: inline-block;
     font-size: 16px;
     color: variables.$color-accent;
     text-decoration: none;
@@ -117,4 +119,9 @@ p {
 
 .icon-sprite_hidden {
     display: none;
+}
+
+.requirements__name,
+.quotes__author-name {
+    color: variables.$primary-color;
 }
