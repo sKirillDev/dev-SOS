@@ -7,7 +7,7 @@ html {
 
 body {
     font-family: variables.$font-primary;
-    background-color: #000000;
+    background-color: #080A0B;
     color: variables.$color;
 }
 
@@ -45,6 +45,23 @@ h3 {
 p {
     font-size: 18px;
     line-height: 1.22;
+}
+
+input {
+    padding: 27px 0 11px 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: variables.$primary-color;
+    flex: 1;
+}
+
+label {
+    position: absolute;
+    font-size: 14px;
+    opacity: 0.5;
+    padding: 6px 0 0 20px;
 }
 
 .bg-screen {
@@ -87,12 +104,21 @@ p {
     background: linear-gradient(181deg, #ffb548 0%, #f3af34 99.52%);
     padding: 17px 18px 20px;
     border-radius: 4px;
+    text-align: center;
 
     &__line {
         display: inline-block;
         width: 2px;
         height: 24px;
         margin: 0 7px;
+    }
+
+    &.btn-md {
+        padding: 17px 38px 20px 31px;
+    }
+
+    &.btn-lg {
+        padding: 18px 73px 20px;
     }
 }
 

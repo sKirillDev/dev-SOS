@@ -57,4 +57,9 @@
             margin-left: 0;
         }
     }
+
+    .newsletter__input-box {
+        max-width: 300px;
+        flex-direction: column;
+    }
 }

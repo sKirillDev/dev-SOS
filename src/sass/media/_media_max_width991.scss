@@ -14,6 +14,16 @@
         letter-spacing: 0.11em;
     }
 
+    input {
+        padding: 16px 17px 7px;
+        font-size: 14px;
+    }
+
+    label {
+        padding: 3px 0 0 17px;
+        font-size: 12px;
+    }
+
     .navbar {
         padding-top: 10px;
 
@@ -201,5 +211,23 @@
     .quotes__title,
     .quotes__description {
         margin-bottom: 30px;
+    }
+
+    .newsletter {
+        .container {
+            gap: 0;
+        }
+    }
+
+    .newsletter__item {
+        margin-left: -40px;
+    }
+
+    .newsletter__title {
+        margin-bottom: 24px;
+    }
+
+    .newsletter__description {
+        margin-bottom: 32px;
     }
 }

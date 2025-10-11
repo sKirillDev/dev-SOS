@@ -1,0 +1,42 @@
+@use 'variables'as variables;
+
+.newsletter {
+    display: flex;
+    align-items: center;
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
+
+    &::before,
+    &::after {
+        z-index: 11;
+    }
+}
+
+.newsletter__item {
+    position: relative;
+    z-index: 0;
+}
+
+.newsletter__content {
+    max-width: 655px;
+}
+
+.newsletter__title {
+    margin-bottom: 45px;
+}
+
+.newsletter__description {
+    margin-bottom: 60px;
+}
+
+.newsletter__input-box {
+    display: flex;
+    gap: 17px;
+}
+
+
+

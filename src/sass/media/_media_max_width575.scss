@@ -52,4 +52,18 @@
             display: none;
         }
     }
+
+    .newsletter {
+        .container {
+            position: relative;
+            z-index: 15;
+        }
+    }
+
+    .newsletter__input-box {
+        position: absolute;
+        left: 14px;
+        width: calc(100% - 28px);
+        max-width: none;
+    }
 }
