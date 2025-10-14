@@ -24,6 +24,13 @@
         font-size: 12px;
     }
 
+    header {
+        .nav-item {
+            background-color: #00000054;
+            border-radius: 4px;
+        }
+    }
+
     .navbar {
         padding-top: 10px;
 
@@ -45,11 +52,6 @@
 
     .navbar__line {
         opacity: 1;
-    }
-
-    .nav-item {
-        background-color: #00000054;
-        border-radius: 4px;
     }
 
     .container {
@@ -214,6 +216,8 @@
     }
 
     .newsletter {
+        align-items: center;
+
         .container {
             gap: 0;
         }
@@ -229,5 +233,40 @@
 
     .newsletter__description {
         margin-bottom: 32px;
+    }
+
+    .newsletter__input-box {
+        gap: 19px;
+    }
+
+    .footer {
+        .footer__wrap {
+            flex-direction: column;
+            align-items: center;
+            gap: 42px;
+        }
+    }
+
+    .footer__nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 0;
+    }
+
+    .footer__social {
+        margin-top: -9px;
+    }
+
+    .footer__info {
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+    }
+
+    .footer__legal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
     }
 }

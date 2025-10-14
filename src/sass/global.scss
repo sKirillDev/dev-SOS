@@ -5,6 +5,12 @@ html {
     scroll-behavior: smooth;
 }
 
+* {
+    &:focus-visible {
+        outline: none;
+    }
+}
+
 body {
     font-family: variables.$font-primary;
     background-color: #080A0B;
@@ -62,6 +68,10 @@ label {
     font-size: 14px;
     opacity: 0.5;
     padding: 6px 0 0 20px;
+}
+
+hr {
+    margin: 31px 0 22px 0;
 }
 
 .bg-screen {

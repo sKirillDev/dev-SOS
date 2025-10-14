@@ -2,12 +2,18 @@
 
 .newsletter {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 
     .container {
         display: flex;
         align-items: center;
         gap: 70px;
+    }
+
+    &.bg-screen {
+        &::after {
+            content: none;
+        }
     }
 
     &::before,
