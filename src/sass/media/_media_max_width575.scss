@@ -1,6 +1,7 @@
+@use '../variables' as variables;
 @media screen and (max-width: 575.98px) {
     .about {
-        background: url("/img/bg-image-2-mobile.png") center/cover no-repeat;
+        background: url("/img/bg-image-2-mobile.webp") center/cover no-repeat;
     }
 
     .about__content {
@@ -33,7 +34,7 @@
     }
 
     .requirements {
-        background: url("/img/bg-image-4-mobile.png") center/cover no-repeat;
+        background: url("/img/bg-image-4-mobile.") center/cover no-repeat;
         align-items: flex-start;
         padding-top: 70px;
     }
@@ -44,7 +45,7 @@
     }
 
     .requirements__description {
-        font-size: 14px;
+        font-size: variables.$font-secondary-size;
         margin-bottom: 0;
         line-height: 1.14;
 

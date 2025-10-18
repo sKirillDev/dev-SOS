@@ -2,7 +2,7 @@
 
 .quotes {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.789) 1%, transparent),
-        url("/img/bg-image-5.png") center/cover no-repeat;
+        url("/img/bg-image-5.webp") center/cover no-repeat;
     display: flex;
     align-items: center;
 
@@ -88,7 +88,7 @@
 }
 
 .quotes__date {
-    font-size: 14px;
+    font-size: variables.$font-secondary-size;
 }
 
 .quotes__author-role {
@@ -101,10 +101,8 @@
 }
 
 .quotes__author-text {
-    &::before {
-        content: "“";
-    }
 
+    &::before,
     &::after {
         content: "“";
     }

@@ -2,7 +2,7 @@
 
 .requirements {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.789) 1%, transparent),
-        url("/img/bg-image-4.png") center/cover no-repeat;
+        url("/img/bg-image-4.webp") center/cover no-repeat;
     display: flex;
     align-items: center;
 }
@@ -27,7 +27,7 @@
 }
 
 .requirements__col {
-    font-size: 14px;
+    font-size: variables.$font-secondary-size;
     padding: 15px 20px 0px;
 
     &:last-child {

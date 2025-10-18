@@ -1,3 +1,4 @@
+@use '../variables' as variables;
 @media screen and (max-width: 767.98px) {
     .banner {
         h1 {
@@ -16,7 +17,7 @@
     }
 
     .btn-primary {
-        font-size: 14px;
+        font-size: variables.$font-secondary-size;
         padding: 12px 18px 15px;
     }
 
@@ -60,7 +61,7 @@
     }
 
     .features {
-        background: linear-gradient(to top, rgb(0 0 0) 20%, transparent), url(/img/bg-image-3.png) center / cover no-repeat;
+        background: linear-gradient(to top, rgb(0 0 0) 20%, transparent), url(/img/bg-image-3.webp) center / cover no-repeat;
         background-position: 35%;
     }
 

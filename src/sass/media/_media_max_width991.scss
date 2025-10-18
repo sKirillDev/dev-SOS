@@ -1,3 +1,4 @@
+@use '../variables' as variables;
 @media screen and (max-width: 991.98px) {
     h1 {
         font-size: 33px;
@@ -16,7 +17,7 @@
 
     input {
         padding: 16px 17px 7px;
-        font-size: 14px;
+        font-size: variables.$font-secondary-size;
     }
 
     label {
@@ -97,7 +98,7 @@
         z-index: 1;
 
         p {
-            font-size: 14px;
+            font-size: variables.$font-secondary-size;
             line-height: 114%;
         }
 
@@ -114,7 +115,7 @@
     }
 
     .accordion-body {
-        font-size: 14px;
+        font-size: variables.$font-secondary-size;
         line-height: 1.14;
     }
 
@@ -198,7 +199,7 @@
 
     .quotes__author-role,
     .quotes__author-text {
-        font-size: 14px;
+        font-size: variables.$font-secondary-size;
     }
 
     .quotes__author-text {
@@ -206,7 +207,7 @@
     }
 
     .quotes__description {
-        font-size: 16px;
+        font-size: variables.$font-size;
         text-align: justify;
     }
 

@@ -1,8 +1,8 @@
 @use 'variables'as variables;
 
 .banner {
-    background: linear-gradient(to top, rgb(0, 0, 0), transparent), 
-    url("/img/bg-image.png") center/cover no-repeat;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent),
+        url("/img/bg-image.webp") center/cover no-repeat;
 
     h1 {
         margin-bottom: -6px;
@@ -24,35 +24,35 @@
             text-align: center;
         }
     }
+}
 
-    &__scroll {
+.banner__scroll {
+    position: absolute;
+    bottom: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2.2;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: variables.$color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: variables.$primary-color;
+    }
+
+    .banner__icon_arrow-down {
         position: absolute;
-        bottom: 65px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 2.2;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: variables.$color;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        z-index: 10;
-
-        &:hover,
-        &:active,
-        &:focus {
-            color: variables.$primary-color;
-        }
-
-        .banner__icon_arrow-down {
-            position: absolute;
-            width: 23px;
-            height: 11px;
-            animation: moving alternate 0.9s infinite;
-        }
+        width: 23px;
+        height: 11px;
+        animation: moving alternate 0.9s infinite;
     }
 }
 
