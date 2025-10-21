@@ -4,8 +4,6 @@ const btnBurger = document.querySelector('.hamburger')
 btnBurger.addEventListener('click', () => btnBurger.classList.toggle('is-active'))
 
 
-
-
 const dropdown = document.querySelector('.dropdown');
 const line = document.querySelector('.navbar__line');
 const collapse = document.getElementById('navbarSupportedContent');
@@ -36,7 +34,6 @@ window.addEventListener('resize', moveElements);
 const firstScreen = document.querySelector('.banner')
 const navToggle = document.querySelector('.navbar-toggler')
 navToggle.addEventListener('click', () => firstScreen.classList.toggle('active'))
-
 
 
 const swiper = new Swiper(".swiper", {
@@ -76,5 +73,3 @@ document.querySelectorAll(".accordion-collapse").forEach(collapse => {
     }
   });
 });
-
-

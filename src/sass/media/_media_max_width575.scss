@@ -1,4 +1,5 @@
-@use '../variables' as variables;
+@use '../variables'as variables;
+
 @media screen and (max-width: 575.98px) {
     .about {
         background: url("/img/bg-image-2-mobile.webp") center/cover no-repeat;
@@ -22,19 +23,21 @@
     }
 
     .accordion {
-        .accordion-item:nth-child(2n) {
-            .accordion-button:not(.collapsed)::after {
-                height: calc(var(--distance) - 13px);
+        .accordion-item {
+            &:nth-child(2n) {
+                .accordion-button:not(.collapsed)::after {
+                    height: calc(var(--distance) - 13px);
+                }
             }
         }
     }
 
     .accordion-button:not(.collapsed)::after {
-        top: 20px;
+        top: 23px;
     }
 
     .requirements {
-        background: url("/img/bg-image-4-mobile.") center/cover no-repeat;
+        background: url("/img/bg-image-4-mobile.webp") center/cover no-repeat;
         align-items: flex-start;
         padding-top: 70px;
     }

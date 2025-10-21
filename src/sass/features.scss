@@ -29,8 +29,12 @@
     border: none;
     margin-bottom: 30px;
 
-    h2 {
+    span {
         margin: 0;
+        font-size: 2.25rem;
+        font-family: variables.$font-secondary;
+        letter-spacing: 0.06em;
+        font-weight: 700;
     }
 
     &:last-child {
@@ -79,7 +83,7 @@
         background-color: variables.$color;
         position: absolute;
         left: -39px;
-        top: 16px;
+        top: 22px;
         transform: none;
 
         animation: grow-connector 0.5s;
