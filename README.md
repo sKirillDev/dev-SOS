@@ -4,9 +4,9 @@
 
 The project includes:
 
-> Responsive layout for different devices
-> Page structuring using Handlebars partials
-> Styling using SCSS and Bootstrap 5
+> Responsive layout for different devices;
+> Page structuring using Handlebars partials;
+> Styling using SCSS and Bootstrap 5;
 > Interactive elements, such as Swiper sliders and buttons with JS logic
 
 ---
@@ -41,4 +41,5 @@ Hamburgers.css — animated burger menus
 ## 📬 Contacts
 
 Email: k.sychov.dp@gmail.com
+
 Telegram: [@kiriwllqx](https://t.me/kiriwllqx)
